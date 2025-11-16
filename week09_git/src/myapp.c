@@ -11,9 +11,9 @@ int main(void) {
     printf("Enter expression (ex: 1 + 2): ");
     scanf("%d %c %d", &a, &op, &b);
 
-
     calculate(a, op, b);
- printf("Thanks for using my calculator!\n");
+
+    printf("~~~Good bye. See you again ~~~\n");
     return 0;
 }
 
@@ -28,10 +28,14 @@ void calculate(int a, char op, int b) {
         result = mymul(a, b);
     } else if (op == '/') {
         result = mydiv(a, b);
+    } else if (op == '%') {
+        result = mymod(a, b);
+    } else if (op == '^') {
+        result = mypow(a, b);
     } else {
         printf("Unknown operator: %c\n", op);
         return;
     }
 
-    printf("Result: %d\n", result);
+    printf("Result = %d\n", result);
 }
