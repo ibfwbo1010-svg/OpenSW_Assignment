@@ -1,0 +1,29 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 20:23 ?        00:00:00 /sbin/init
+root           2       1  0 20:23 ?        00:00:00 /init
+root           6       2  0 20:23 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          52       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          98       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root         109       1  0 20:23 ?        00:00:01 snapfuse /var/lib/snapd/snaps/snapd_25202.snap /snap/snapd/25202 -o ro,nodev,allow_other,suid
+root         110       1  0 20:23 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core22_2133.snap /snap/core22/2133 -o ro,nodev,allow_other,suid
+root         112       1  0 20:23 ?        00:00:00 snapfuse /var/lib/snapd/snaps/tree_54.snap /snap/tree/54 -o ro,nodev,allow_other,suid
+systemd+     139       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     142       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         199       1  0 20:23 ?        00:00:00 /usr/sbin/cron -f -P
+message+     200       1  0 20:23 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         206       1  0 20:23 ?        00:00:00 /usr/lib/snapd/snapd
+root         207       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         209       1  0 20:23 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         212       1  0 20:23 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       224       1  0 20:23 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         231       1  0 20:23 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         237       1  0 20:23 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         361       2  0 20:23 ?        00:00:00 /init
+root         362     361  0 20:23 ?        00:00:00 /init
+ansoon1+     363     362  0 20:23 pts/0    00:00:00 -bash
+root         364       2  0 20:23 pts/1    00:00:00 /bin/login -f
+ansoon1+     416       1  0 20:23 ?        00:00:00 /usr/lib/systemd/systemd --user
+ansoon1+     417     416  0 20:23 ?        00:00:00 (sd-pam)
+ansoon1+     428     364  0 20:23 pts/1    00:00:00 -bash
+polkitd      854       1  0 20:48 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+ansoon1+    1023     363  0 21:00 pts/0    00:00:00 ps -ef
