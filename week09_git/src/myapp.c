@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "myops.h"
 
 void calculate(int a, char op, int b);
 
@@ -16,5 +17,20 @@ int main(void) {
 }
 
 void calculate(int a, char op, int b) {
-    printf("Calculating.....\n");
+    int result;
+
+    if (op == '+') {
+        result = myadd(a, b);
+    } else if (op == '-') {
+        result = mysub(a, b);
+    } else if (op == '*') {
+        result = mymul(a, b);
+    } else if (op == '/') {
+        result = mydiv(a, b);
+    } else {
+        printf("Unknown operator: %c\n", op);
+        return;
+    }
+
+    printf("Result: %d\n", result);
 }
