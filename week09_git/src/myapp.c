@@ -11,8 +11,9 @@ int main(void) {
     printf("Enter expression (ex: 1 + 2): ");
     scanf("%d %c %d", &a, &op, &b);
 
-    calculate(a, op, b);
 
+    calculate(a, op, b);
+ printf("Thanks for using my calculator!\n");
     return 0;
 }
 
