@@ -6,4 +6,7 @@ int mysub(int a, int b);
 int mymul(int a, int b);
 int mydiv(int a, int b);
 
+int mymod(int a, int b);  // 추가
+int mypow(int a, int b);  // 추가
+
 #endif
